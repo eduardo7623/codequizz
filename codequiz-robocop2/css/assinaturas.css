@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #17152D;
+    color: white;
+    min-height: 100vh;
+}
+
+/* VOLTAR */
+
+.voltar {
+    position: absolute;
+    top: 25px;
+    left: 30px;
+
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.voltar:hover {
+    color: #8B5CF6;
+}
+
+
+/* CABEÇALHO */
+
+header {
+    text-align: center;
+    padding-top: 55px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+
+    color: white;
+}
+
+.subtitulo {
+    color: #b8b5c9;
+    font-size: 17px;
+}
+
+
+/* PLANOS */
+
+.planos {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 25px;
+
+    margin: 55px auto;
+    max-width: 1100px;
+}
+
+
+/* CARD */
+
+.plano {
+    background: #211e3d;
+
+    width: 320px;
+    min-height: 520px;
+
+    padding: 30px 25px;
+
+    border-radius: 15px;
+
+    border: 1px solid #38325e;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* NOME */
+
+.nome-plano {
+    color: #8B5CF6;
+    font-size: 18px;
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+
+/* PREÇO */
+
+.plano h2 {
+    font-size: 42px;
+    margin-bottom: 0;
+}
+
+.plano h2 span {
+    font-size: 24px;
+}
+
+.periodo {
+    color: #aaa6bb;
+    margin-bottom: 20px;
+}
+
+
+/* DESCRIÇÃO */
+
+.descricao {
+    color: #d1cedb;
+    margin-bottom: 20px;
+}
+
+
+/* LISTA */
+
+.plano ul {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 14px;
+
+    margin-bottom: 25px;
+}
+
+.plano li {
+    color: #e5e2ed;
+}
+
+
+/* BOTÃO */
+
+.botao {
+    margin-top: auto;
+
+    text-align: center;
+
+    padding: 14px;
+
+    border-radius: 8px;
+
+    background: #2563EB;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #8B5CF6;
+
+    box-shadow: 0 0 18px #8B5CF6;
+}
+
+
+/* PLANO PRO */
+
+.destaque {
+    border: 2px solid #8B5CF6;
+
+    box-shadow:
+        0 0 20px rgba(139, 92, 246, 0.25);
+}
+
+.destaque .nome-plano {
+    color: #8B5CF6;
+}
+
+
+/* MAIS POPULAR */
+
+.popular {
+    position: absolute;
+
+    top: -14px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background: #8B5CF6;
+
+    padding: 6px 18px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+
+/* ANUAL */
+
+.anual {
+    border: 2px solid #611edf;
+}
+
+.anual .nome-plano {
+    color: #611edf;
+}
+
+.promocao {
+    position: absolute;
+
+    top: -14px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background: #611edf;
+
+    padding: 6px 15px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+
+
+/* VITALÍCIO */
+
+.vitalicio {
+    border: 2px solid #2563EB;
+}
+
+.vitalicio .nome-plano {
+    color: #2563EB;
+}
+
+.oferta {
+    position: absolute;
+
+    top: -14px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background: #2563EB;
+
+    padding: 6px 15px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    text-align: center;
+
+    color: #77738b;
+
+    padding: 20px;
+}
+

@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #17152D;
+    color: #F8FAFC;
+}
+
+.usuario-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+/* Perfil */
+
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #1D1A36;
+    border: 1px solid #2D2850;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+.avatar {
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #8B5CF6;
+    border-radius: 50%;
+
+    font-size: 35px;
+}
+
+.perfil h1 {
+    color: #F8FAFC;
+    margin-bottom: 5px;
+}
+
+.perfil p {
+    color: #A9A6C3;
+}
+
+
+/* Estatísticas */
+
+.estatisticas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.card {
+    background-color: #1D1A36;
+    border: 1px solid #2D2850;
+
+    padding: 25px;
+    text-align: center;
+
+    border-radius: 15px;
+}
+
+.card:hover {
+    border-color: #8B5CF6;
+}
+
+.card span {
+    font-size: 30px;
+}
+
+.card h2 {
+    margin-top: 10px;
+    color: #8B5CF6;
+}
+
+.card p {
+    color: #A9A6C3;
+}
+
+
+/* Progresso */
+
+.progresso {
+    background-color: #1D1A36;
+    border: 1px solid #2D2850;
+
+    padding: 30px;
+    border-radius: 15px;
+
+    margin-bottom: 25px;
+}
+
+.progresso h2 {
+    color: #F8FAFC;
+    margin-bottom: 10px;
+}
+
+.progresso p {
+    margin: 10px 0;
+    color: #A9A6C3;
+}
+
+.barra {
+    width: 100%;
+    height: 15px;
+
+    background-color: #17152D;
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.barra-preenchida {
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        #8B5CF6,
+        #2563EB
+    );
+
+    border-radius: 10px;
+}
+
+
+/* Ações */
+
+.acoes {
+    background-color: #1D1A36;
+    border: 1px solid #2D2850;
+
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.acoes h2 {
+    color: #F8FAFC;
+    margin-bottom: 20px;
+}
+
+.acoes a {
+    display: block;
+
+    padding: 15px;
+    margin-bottom: 10px;
+
+    background-color: #17152D;
+    border: 1px solid #2D2850;
+
+    color: #F8FAFC;
+
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.acoes a:hover {
+    background-color: #2563EB;
+    border-color: #2563EB;
+}

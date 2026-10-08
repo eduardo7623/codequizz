@@ -1,0 +1,86 @@
+:root{
+    --fundo:#0f1220; --painel:#181c30; --borda:#2a3050; --texto:#e8eaf6; --suave:#98a0c8;
+    --destaque:#ffc933; --ok:#4ade80; --erro:#f87171;
+    --fonte:"Segoe UI",system-ui,sans-serif; --mono:"Cascadia Code",Consolas,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--fundo);color:var(--texto);font-family:var(--fonte);line-height:1.6}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--destaque);outline-offset:2px}
+
+.topo{border-bottom:1px solid var(--borda);position:sticky;top:0;background:var(--fundo);z-index:10}
+.navbar{max-width:1200px;margin:auto;padding:12px 24px;display:flex;align-items:center;gap:24px}
+.navbar .logo img{height:40px;display:block}
+.navbar ul{list-style:none;display:flex;gap:4px;margin-left:auto;flex-wrap:wrap}
+.navbar ul a{text-decoration:none;color:var(--suave);padding:6px 12px;border-radius:6px}
+.navbar ul a:hover,.navbar ul a.ativo{color:var(--texto);background:var(--painel)}
+
+.botao{display:inline-block;background:var(--destaque);color:#1a1500;text-decoration:none;
+    padding:12px 24px;border-radius:8px;border:0;cursor:pointer;font:inherit;font-weight:700}
+.botao:hover{filter:brightness(1.08)}
+.botao-sm{padding:8px 16px}
+.botao-contorno{background:transparent;color:var(--texto);border:1px solid var(--borda)}
+
+.pagina{max-width:1200px;margin:auto;padding:48px 24px 80px}
+.pagina-topo{margin-bottom:40px;max-width:640px}
+.pagina-topo h1{font-size:2.4rem;line-height:1.2;margin-bottom:12px}
+.pagina-topo p{color:var(--suave)}
+
+.grade{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.cartao{background:var(--painel);border:1px solid var(--borda);border-radius:12px;padding:24px;display:flex;flex-direction:column;gap:10px}
+.cartao .icone{font-size:2rem}
+.cartao p{color:var(--suave);flex:1}
+.cartao .botao{align-self:flex-start;margin-top:8px}
+.cartao.em-breve{opacity:.6}
+.etiqueta{font-size:.85rem;color:var(--suave);align-self:flex-start}
+.cartao .etiqueta{border:1px solid var(--borda);border-radius:99px;padding:2px 10px}
+
+.barra{height:8px;background:var(--borda);border-radius:99px;overflow:hidden}
+.barra i{display:block;height:100%;background:var(--ok);transition:width .3s}
+
+/* formulários */
+.caixa-form{max-width:420px;margin:auto;background:var(--painel);border:1px solid var(--borda);border-radius:12px;padding:32px}
+.caixa-form h1{margin-bottom:20px;font-size:1.6rem}
+.caixa-form label{display:block;margin:14px 0 6px;color:var(--suave);font-size:.9rem}
+.caixa-form input{width:100%;padding:10px 12px;background:var(--fundo);border:1px solid var(--borda);border-radius:8px;color:var(--texto);font:inherit}
+.caixa-form .botao{width:100%;margin-top:22px}
+.caixa-form .rodape{margin-top:16px;text-align:center;color:var(--suave);font-size:.9rem}
+.aviso{padding:10px 14px;border-radius:8px;margin-bottom:12px;font-size:.9rem}
+.aviso.erro{background:#3b1d22;color:var(--erro)}
+.aviso.ok{background:#14301f;color:var(--ok)}
+
+/* editor */
+.editor{display:grid;grid-template-columns:300px 1fr;gap:20px}
+.desafios{display:flex;flex-direction:column;gap:8px}
+.desafios button{text-align:left;background:var(--painel);color:var(--texto);border:1px solid var(--borda);
+    border-radius:8px;padding:10px 12px;cursor:pointer;font:inherit}
+.desafios button[aria-current="true"]{border-color:var(--destaque)}
+.desafios button.feito::after{content:" ✓";color:var(--ok)}
+.enunciado{background:var(--painel);border:1px solid var(--borda);border-radius:12px;padding:16px;margin-top:12px}
+.enunciado h2{font-size:1.1rem;margin-bottom:6px}
+.enunciado p{color:var(--suave);font-size:.95rem}
+.area{display:flex;flex-direction:column;gap:12px;min-width:0}
+.area textarea {
+    width: 100%;
+    min-height: 280px;
+    resize: none !important;
+    overflow: auto;
+    background: #0a0d1a;
+    color: var(--texto);
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+    padding: 16px;
+    font: 14px/1.6 var(--mono);
+    tab-size: 4;
+}
+
+.area textarea::-webkit-resizer {
+    display: none;
+}
+.acoes{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.acoes small{color:var(--suave);margin-left:auto}
+.saida{background:#0a0d1a;border:1px solid var(--borda);border-radius:12px;padding:16px;font:14px/1.6 var(--mono);min-height:120px;white-space:pre-wrap}
+.saida .erro{color:var(--erro)} .saida .ok{color:var(--ok)} .saida .vazio{color:var(--suave)}
+textarea {
+    resize: none !important;
+}
